@@ -1,7 +1,7 @@
 import { API_URL } from "./api";
 
 function login(data) {
-  fetch(`${API_URL}/api/login`, {
+  fetch(`${API_URL}/api/auth/login`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -11,3 +11,4 @@ function login(data) {
 }
 
 export default login;
+
